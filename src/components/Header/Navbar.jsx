@@ -1,9 +1,11 @@
 import React from "react";
+import { Link } from "react-router";
 
 const Navbar = () => {
     const links = <>
-        <li className="m-2">Home</li>
-        <li className="m-2">About</li>
+        <Link to='/'><li className="m-2">Home</li></Link>
+        <Link to="/about"><li className="m-2">About</li></Link>
+        <Link to="/readList"><li className="m-2">ReadList</li></Link>
     </>
   return (
     <div className="navbar bg-base-100 shadow-sm">
@@ -33,7 +35,7 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <a className="btn btn-ghost text-xl">Boi Poka</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
